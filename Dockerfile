@@ -5,6 +5,6 @@ RUN set -ex \
   && apt upgrade -y 
 
 RUN set -ex \
-  && apt install -y dnsutils pv netcat tcpdump
+  && apt install -y dnsutils pv netcat tcpdump traceroute iputils-ping telnet libpcap-dev iputils-tracepath net-tools
 
 CMD ["/bin/bash"]
