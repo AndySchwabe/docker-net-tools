@@ -5,7 +5,6 @@ RUN set -ex \
   && apt upgrade -y 
 
 RUN set -ex \
-  && apt install -y dnsutils pv netcat 
+  && apt install -y dnsutils pv netcat tcpdump
 
 CMD ["/bin/bash"]
-
